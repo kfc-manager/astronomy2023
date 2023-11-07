@@ -4,9 +4,80 @@ a) What do you understand by irradiance? Calculate the irradiance received from 
 absorbing atmospheres of planet Mercury, Earth, and Uranus. Given, luminosity of the Sun 
 $L_\odot = 3.839 \times 10^{26}W$.\\
 \\
+Irradiance is the power of the electromagnetic energy received by a surface. Given from the lecture we
+have the following equation for power intake of a planet:
+\begin{equation*}
+    L_{in} = (1 - A) \frac{L_\odot \pi R^2_P}{4 \pi d^2_P}
+\end{equation*}
+With that equation we receive the power intake of the whole atmosphere of the planet. If we devide it now
+by the area of its atmosphere we get the irradiance or power intake per area unit:
+\begin{equation*}
+    \begin{split}
+        E_e &= \frac{L_{in}}{A_P}\\
+            &= (1 - A) \frac{L_\odot \pi R^2_P}{4 \pi d^2_P} \cdot \frac{1}{\pi R^2_P}\\
+            &= (1 - A) \frac{L_\odot}{4 \pi d^2_P}\\
+    \end{split}
+\end{equation*}
+We take a look at the albedos and distance Sun to planet: 
+\begin{center}
+    \begin{tabular}{c|c|c}
+        Planet & Albedo & Distance to Sun\\
+        \hline
+        Mercury & 0.06 & $0.307499 AU$\\
+        \hline
+        Earth & 0.31 & $1 AU$\\
+        \hline
+        Uranus & 0.66 & $19.201 AU$\\
+    \end{tabular}
+\end{center}
+\textbf{Mercury:}
+\begin{equation*}
+    \begin{split}
+        E_e &= (1 - 0.06) \frac{3.839 \times 10^{26}W}{4 \pi 0.307499^2 AU^2}\\
+            &\approx (1 - 0.06) \frac{3.839 \times 10^{26}W}{4 \pi 0.307499^2 \cdot (1.496 \times 10^{11})^2 m^2}\\
+            &\approx 13571 \frac{W}{m^2}
+    \end{split}
+\end{equation*}
+\textbf{Earth:}
+\begin{equation*}
+    \begin{split}
+        E_e &= (1 - 0.31) \frac{3.839 \times 10^{26}W}{4 \pi 1^2 AU^2}\\
+            &\approx (1 - 0.31) \frac{3.839 \times 10^{26}W}{4 \pi 1^2 \cdot (1.496 \times 10^{11})^2 m^2}\\
+            &\approx 941.19037 \frac{W}{m^2}
+    \end{split}
+\end{equation*}
+\textbf{Uranus:}
+\begin{equation*}
+    \begin{split}
+        E_e &= (1 - 0.66) \frac{3.839 \times 10^{26}W}{4 \pi 19.201^2 AU^2}\\
+            &\approx (1 - 0.66) \frac{3.839 \times 10^{26}W}{4 \pi 19.201^2 \cdot (1.496 \times 10^{11})^2 m^2}\\
+            &\approx 1.259 \frac{W}{m^2}
+    \end{split}
+\end{equation*}
 b) The irradiance received by the Sun above the Earth's atmosphere per unit area, is also known as the
 "solar irradiance". Find the distance from where a 60-Watt lightbulb has its irradiance equal to the solar
 irradiance.\\
+\\
+The Eath has a solar irradiance of about $941.19037 \frac{W}{m^2}$. With that in mind we receive the 
+following statement:
+\begin{equation*}
+    941.19037 \frac{W}{m^2} = \frac{60 W}{d_P^2}
+\end{equation*}
+With $d_P$ being the distance from lightbulb to Earth.
+\begin{equation*}
+    \begin{split}
+        d_P^2 &= \frac{60 W}{941.19037 \frac{W}{m^2}}\\
+              &= \sqrt{60 W \cdot \frac{1}{941.19037 \frac{W}{m^2}}}\\
+              &= \sqrt{60 W \cdot \frac{1}{941.19037 \frac{W}{m^2}}}\\
+              &= \sqrt{60 W \cdot \frac{1}{941.19037} \cdot \frac{1}{\frac{W}{m^2}}}\\
+              &= \sqrt{60 W \cdot \frac{1}{941.19037} \cdot \frac{m^2}{W}}\\
+              &= \sqrt{60 \cdot \frac{1}{941.19037} \cdot m^2}\\
+              &= \sqrt{\frac{60}{941.19037}}m\\
+              &\approx 0.25248m
+    \end{split}
+\end{equation*}
+The lightbulb must be around 0.25248 metre above the atmosphere of the Earth to cause the same irradiance
+as the Sun to Earth.\\
 \\
 c) The energy emitted per second by a star is $L = 4 \pi R^2 \sigma T^4_{eff} = S \sigma T^4_{eff}$, where
 $S$ is the surface area of the star. A person also emits radiation. Under normal conditions, the 
@@ -14,4 +85,35 @@ temperature of the human body is around $37 \degree C$ or $T \approx 310 K$. An 
 is on the order of $S \approx 1.7 m^2$. What is the energy emitted per second by a person and what is the
 characteristic wavelength of this emission?\\
 \\
-
+The constant $\sigma$ is here the Stefan-Boltzmann constant, which is about 
+$5.67 \times 10^{-8} \frac{W}{m^2K^4}$. We can then insert the values given in the problem setting:
+\begin{equation*}
+    \begin{split}
+        L &= S \sigma T^4_{eff}\\
+          &= 1.7 m^2 \cdot 5.67 \times 10^{-8} \frac{W}{m^2K^4} \cdot 310^4 K^4\\
+          &= 1.7 \cdot 5.67 \times 10^{-8} W \cdot 310^4\\
+          &= 1.7 \cdot 5.67 \times 10^{-8} W \cdot 9.23521 \times 10^9\\
+          &= 1.7 \cdot 5.67 W \cdot 9.23521 \cdot 10\\
+          &= 890.2 W
+    \end{split}
+\end{equation*}
+Since realistically a person can't be perfectly still, we assume that the person is walking at walking
+speed. Meanin that the person would have a velocity of $1.42 \frac{m}{s}$. Then we get the characteristic
+wavelength with the following equation:
+\begin{equation*}
+    \lambda = \frac{h}{p}
+\end{equation*}
+where $h$ is the Planck constant of about $6.626 \times 10^{-34} \frac{m^2 kg}{s}$. And $p$ being the
+momentum of the person:
+\begin{equation*}
+    p = m \cdot v
+\end{equation*}
+An average person ways about $80 kg$. Then we receive:
+\begin{equation*}
+    \begin{split}
+        \lambda &= \frac{h}{m \cdot v}\\
+                &= 6.626 \times 10^{-34} \frac{m^2 kg}{s} \cdot \frac{1}{80 kg \cdot 1.42 \frac{m}{s}}\\
+                &= 6.626 \times 10^{-34} m \cdot \frac{1}{80 \cdot 1.42}\\
+                &= 5.83275 \times 10^{-36} m
+    \end{split}
+\end{equation*}
