@@ -3,7 +3,8 @@
 a) Draw an illustration diagram of the Sun with the following components and write a short description of
 each component: solar wind, corona, chromosphere, photosphere, convection zone, radiation zone, core and
 sunspots.\\
-\noindent\makebox[\textwidth]{\includegraphics[scale=0.35]{sun.png}}
+\\
+\noindent\makebox[\textwidth]{\includegraphics[scale=0.05]{sun.png}}\\
 \noindent
 \textbf{Solar wind} is a stream of charged particles, predominantly electrons and protons, ejected from 
 the Sun's outer layers into space.\\
@@ -34,7 +35,26 @@ b) Use Wien's Law to calculate the wavelength of peak thermal emission from the 
 surface of the Sun. What color does this correspond to? How does that compare to the color of the Sun that
 the human eye perceives?\\
 \\
+Wien's displacement law gives us the following formula to calculate the wavelength of th peak thermal emission:
+\begin{equation*}
+    \lambda_{\text{peak}} = \frac{b}{T}
+\end{equation*}
+The sun surface average temperature is around 5772 K. Inserting that and the constant of proportionality we
+receive:
+\begin{equation*}
+    \begin{split}
+        \lambda_{\text{peak}} &= \frac{2898 \mu \text{m} \cdot \text{K}}{5772 \text{K}}\\
+                              &= \frac{2898 \mu \text{m}}{5772}\\
+                              &\approx 0.5021 \mu \text{m}\\
+                              &= 502.1 \text{nm}\\
+    \end{split}
+\end{equation*}
+Usually the Sun looks yellow - reddish. But light from radiation with a wavelength of 502.1 nm would be
+perceived as a bright blue by the human eye.\\
+\\
 c) The corona has a temperature of around 1 million K. How does this compare to the temperature of the
 surface of the Sun?\\
 \\
-
+If we insert the temperature of the corone into the previous equation from b). We can see that the wavelength of
+it's radiation is way below 380 nm, which is why the light is not visible to the human eye and we don't see it's
+plasma usually.

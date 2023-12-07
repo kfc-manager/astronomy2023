@@ -9,9 +9,48 @@ defect.\\
 \\
 a) Calculate the mass defect, in a p-p chain reaction, in Joule and MeV.\\
 \\
+Mass of a proton is $1.6726 \times 10^{-27}$ kg. That means that the mass of four protons is 
+$6.6904 \times 10^{-27}$ kg. The mass of a helium nucleus is $6.6447 \times 10^{-27}$ kg. Subtracting
+the mass of the four protons from the mass of the helium nucleus we receive:
+\begin{equation*}
+    6.6447 \times 10^{-27} - 6.6904 \times 10^{-27} = -4.57 \times 10^{-29}
+\end{equation*}
+Inserting that in Einstin's famous equation, we have:
+\begin{equation*}
+    \begin{split}
+        E &= mc^2\\
+          &= (4.57 \times 10^{-29} \text{kg})(3 \times 10^8 \frac{m}{s})^2\\
+          &= 4.11 \times 10^{-12} \frac{m \text{kg}}{s}\\
+          &= 4.11 \times 10^{-12} \text{J}\\
+    \end{split}
+\end{equation*}
+We can convert the Joule to megaelectron volts like that:
+\begin{equation*}
+    4.11 \times 10^{-12} \text{J} \times 6.242 \times 10^{12} = 25.6546\\
+\end{equation*}
 b) Calculate the energy liberated, if one 1 kg of helium is produced.\\
 \\
+In one kg of helium there are $1.5 \times 10^{26}$ helium atoms. That means that the reaction has to
+occur $1.5 \times 10^{26}$-times to produce the needed amount of helium, which means that 
+$1.5 \times 10^{26}$-times the energy from previous calculation will be liberated:
+\begin{equation*}
+    4.11 \times 10^{-12} \text{J} \times 1.5 \times 10^{26} = 6.165 \times 10^{14} \text{J}\\
+\end{equation*}
 c) The sun's age is roughly $4.6 \cdot 10^9$ years. Under the assumption that the solar luminosity didn't
 change over the sun's lifetime, how much helium was produced so far? Compare this mass with the total 
-solar mass of $M_\circlebullet = 2 \cdot 10^{30}$ kg.\\
+solar mass of $M_{\circ} = 2 \cdot 10^{30}$ kg.\\
 \\
+With the assumption that the solar luminosity didn't change we can also assume that the Sun produced a 
+steady amount of energy per year with nuclear fusion. The Sun produces $1.23 \times 10^{35}$ Joules per
+year. With that in mind we can calculate the total amount of energy produced with nuclear fusion by the
+Sun:
+\begin{equation*}
+    1.23 \times 10^{35} \text{J} \times 4.6 \times 10^9 = 5.658 \times 10^{44} \text{J}
+\end{equation*}
+We can devide that total amount of energy by the amount of energy, which produces one kg of helium as side
+product:
+\begin{equation*}
+    \frac{5.658 \times 10^{44} \text{J}}{6.165 \times 10^{14} \text{J}} \approx 0.9178 \times 10^{30}
+\end{equation*}
+We can estimate that the Sun produced in it's total lifespan around $0.9178 \times 10^{30}$ kg of helium
+with nuclear fusion.
