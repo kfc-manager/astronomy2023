@@ -16,3 +16,6 @@
 *.njsproj
 *.sln
 *.sw?
+
+# Python related
+**/venv
